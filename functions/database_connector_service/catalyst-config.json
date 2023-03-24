@@ -1,0 +1,16 @@
+{
+	"deployment": {
+		"name": "database_connector_service",
+		"stack": "node16",
+		"type": "advancedio",
+		"env_variables": {
+			"DATABASE": "Your Database",
+			"HOST": "Your host",
+			"DBMS": "Your DBMS",
+			"CODELIB_SECRET_KEY": "CODELIB_FAKE_KEY"
+		}
+	},
+	"execution": {
+		"main": "index.js"
+	}
+}

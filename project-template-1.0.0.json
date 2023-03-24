@@ -1,0 +1,33 @@
+{
+  "name" : "project-template",
+  "version" : "1.0.0",
+  "parameters" : { },
+  "components" : {
+    "Functions" : [ {
+      "type" : "function",
+      "name" : "database_connector_service",
+      "properties" : {
+        "stack" : "node16",
+        "code" : {
+          "path" : "functions/database_connector_service.zip"
+        },
+        "configuration" : {
+          "environment" : {
+            "variables" : {
+              "DATABASE" : "Your Database",
+              "HOST" : "Your host",
+              "DBMS" : "Your DBMS",
+              "CODELIB_SECRET_KEY": "CODELIB_FAKE_KEY"
+            },
+            "last_updated_time" : 1677570958639
+          },
+          "memory" : 256
+        },
+        "type" : "applogic",
+        "name" : "database_connector_service"
+      },
+      "dependsOn" : [ ]
+    } ]
+
+  }
+}
