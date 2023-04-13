@@ -9,7 +9,7 @@ class ErrorHandler {
         message: err.message
       }
     } else {
-      console.log('Error :::', err)
+      console.log('Error :::', err?.message || err)
       return {
         status: 'failure',
         statusCode: 500,
